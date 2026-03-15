@@ -7,18 +7,18 @@ License: MIT
 
 Description:
     A production-ready pipeline for visualizing neural network training as a
-    cinematic side-by-side timelapse. The network learns to classify Market Regimes
+    static side-by-side infographic. The network learns to classify Market Regimes
     (Bull / Bear / Sideways) from real BTC-USD price features.
 
-    Left Panel:  3D Neural Network graph with animated weights & activations.
+    Left Panel:  3D Neural Network graph with trained weights & activations.
     Right Panel: 3D Loss Landscape with gradient descent traversal.
 
     Pipeline Steps:
     1.  **Data Acquisition**: Fetches BTC-USD via yfinance, engineers quant features.
     2.  **Regime Labeling**: Classifies each day as Bull / Bear / Sideways.
     3.  **Training Simulation**: Pure NumPy 8-layer feedforward network (171+ nodes).
-    4.  **3D Rendering**: Plotly dual-scene parallel frame generation via Kaleido.
-    5.  **Output**: Static PNG image via Kaleido.
+    4.  **3D Rendering**: Plotly dual-scene static image via Kaleido.
+    5.  **Output**: Static PNG image.
 
 Dependencies:
     pip install numpy scipy plotly kaleido yfinance
